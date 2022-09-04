@@ -3,7 +3,10 @@
         "outDir": "./dist",
         "module": "esnext",
         "target": "es6",
-        "lib": ["es6", "dom"],
+        "lib": [
+            "es6",
+            "dom"
+        ],
         "sourceMap": true,
         "allowJs": true,
         "jsx": "react",
@@ -14,18 +17,40 @@
         "strictNullChecks": true,
         "baseUrl": "./",
         "rootDir": "./",
-        "typeRoots": ["./node_modules/@types", "./src/@types"],
+        "typeRoots": [
+            "./node_modules/@types",
+            "./src/@types"
+        ],
         "paths": {
-            "@src/*": ["src/*"],
-            "@images/*": ["src/images/*"],
-            "@styles/*": ["src/styles/*"],
-            "@components/*": ["src/components/*"]
+            "@src/*": [
+                "src/*"
+            ],
+            "@images/*": [
+                "src/images/*"
+            ],
+            "@UIElements": [
+                "src/components/UIElements"
+            ],
+            "@redux/*": [
+                "src/redux/*"
+            ],
+            "@sections": [
+                "src/components/sections"
+            ],
+            "@pages": [
+                "src/pages"
+            ],
         },
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "importsNotUsedAsValues": "preserve",
         "incremental": true
     },
-    "include": ["src"],
-    "exclude": ["**/node_modules", "**/.*/"]
+    "include": [
+        "src",
+        "src/**/*"
+    ],
+    "exclude": [
+        "**/node_modules",
+    ]
 }
